@@ -1,0 +1,378 @@
+,Species,Breed
+0,Dog,Schnauzer - Standard
+1,Dog,Yorkiepoo
+2,Dog,Mixed breed Medium (20 - 55lbs when full grown)
+3,Dog,Labrador Retriever (Black)
+4,Dog,French Bulldog
+5,Dog,Shih Tzu
+6,Cat,American Shorthair
+7,Dog,Boxer
+8,Cat,Domestic Longhair
+9,Dog,Mixed breed Small (up to 20lbs when full grown)
+10,Dog,Mixed breed Large (55 – 90lbs when full grown)
+11,Dog,Golden Retriever
+12,Cat,Domestic Shorthair
+13,Dog,Australian Shepherd
+15,Dog,Miniature Goldendoodle
+16,Dog,Wirehaired Pointing Griffon
+17,Cat,<Mixed Breed (Cat)>
+18,Cat,British Shorthair
+19,Dog,Yorkshire Terrier
+20,Cat,Maine Coon
+21,Dog,Dachshund - Standard Smooth Haired
+22,Dog,Goldendoodle
+24,Dog,Boston Terrier
+26,Dog,Labrador Retriever
+27,Dog,German Shepherd
+28,Dog,Labradoodle
+31,Dog,Pomsky
+32,Dog,Pomeranian
+33,Dog,Labrador Retriever (Yellow)
+39,Dog,Jack Russell Terrier
+42,Dog,American Eskimo
+44,Dog,Havanese
+45,Dog,Chihuahua (Short Coat)
+47,Dog,Maltipoo
+53,Dog,Vizsla
+54,Dog,Labrador Retriever (Chocolate)
+58,Dog,Welsh Terrier
+59,Cat,Bengal
+60,Dog,Miniature Schnauzer
+61,Cat,Abyssinian
+65,Dog,Mixed breed (Unknown size)
+67,Dog,Bernedoodle
+68,Dog,Portuguese Water Dog
+75,Dog,English Bulldog
+76,Dog,Poodle-Miniature
+88,Dog,Bichon Frise
+90,Dog,Italian Greyhound
+94,Dog,Pyrenean Shepherd
+95,Dog,Belgian Malinois
+101,Dog,Doberman Pinscher
+102,Dog,Cavalier King Charles Spaniel
+103,Dog,Bernese Mountain Dog
+104,Dog,Chihuahua
+108,Dog,Collie - Smooth
+109,Dog,Australian Labradoodle
+114,Dog,Terrier
+116,Cat,Domestic Mediumhair
+118,Dog,Poodle-Toy
+126,Dog,Beagle
+131,Dog,Silky Terrier
+137,Dog,Basset Hound
+146,Dog,Maltese
+151,Dog,Cockapoo
+153,Dog,Lhasa Apso
+156,Dog,Australian Cattle Dog
+157,Dog,Soft Coated Wheaten Terrier
+158,Cat,Siamese
+161,Cat,Sphynx
+168,Dog,Poodle-Standard
+175,Dog,Miniature Smooth Haired Dachshund
+191,Dog,Rhodesian Ridgeback
+193,Cat,Donskoy
+201,Dog,Pembroke Welsh Corgi
+211,Dog,Lagotto Romagnolo
+223,Dog,Pug
+243,Dog,Chesapeake Bay Retriever
+246,Dog,English Springer Spaniel
+259,Dog,Rat Terrier
+262,Dog,Leonberger
+276,Dog,Irish Setter
+283,Dog,Mixed breed Giant (more than 90lbs when full grown)
+291,Dog,Saint Bernard
+303,Dog,American Staffordshire Terrier
+310,Dog,Nova Scotia Duck Tolling Retriever
+311,Dog,Siberian Husky
+312,Dog,Border Terrier
+321,Dog,Morkie
+332,Dog,English Shepherd
+334,Dog,Maremma
+337,Dog,Miniature Labradoodle
+342,Dog,Alaskan Klee Kai
+344,Dog,Biewer
+352,Dog,Puggle
+357,Dog,Cardigan Welsh Corgi
+361,Dog,American Pitbull Terrier
+362,Dog,Cocker Spaniel
+375,Dog,Miniature Australian Shepherd
+388,Dog,Border Collie
+407,Dog,Rottweiler
+420,Dog,American Staffordshire Bull Terrier
+421,Dog,Miniature Wire Haired Dachshund
+427,Dog,Greater Swiss Mountain Dog
+437,Dog,Shihpoo
+444,Dog,Blackmouth Cur
+456,Dog,English Mastiff
+458,Dog,Olde English Bulldog
+473,Dog,Weimaraner
+481,Dog,Miniature Long Haired Dachshund
+485,Cat,Siberian
+501,Dog,Samoyed
+508,Dog,Shetland Sheepdog
+510,Dog,Dachshund - Standard Long Haired
+513,Dog,Aussiedoodle
+514,Cat,Balinese
+517,Dog,Irish Wolfhound
+528,Dog,West Highland White Terrier
+540,Dog,Silken Windhound
+542,Dog,Feist
+550,Dog,Shar Pei
+555,Dog,Dutch Shepherd
+578,Dog,Bull Terrier
+584,Dog,Bolognese
+589,Cat,Himalayan
+590,Dog,Cane Corso
+597,Dog,Formosan (Taiwanese) Mountain Dog
+616,Dog,Chow Chow
+622,Dog,Japanese Chin (Spaniel)
+670,Dog,Chipom
+685,Dog,Gordon Setter
+693,Cat,Oriental
+695,Dog,Coton de Tulear
+701,Dog,American Foxhound
+703,Dog,Cavapoo
+706,Cat,Manx
+724,Dog,Double Doodle
+768,Cat,Pixiebob
+781,Cat,Birman
+789,Dog,Dutch Sheepdog
+809,Dog,American Bulldog
+812,Dog,Greyhound
+826,Dog,Alaskan Malamute
+827,Cat,Russian Blue
+841,Dog,Keeshond
+843,Dog,Basenji
+862,Dog,Great Dane
+871,Dog,Miniature Pinscher
+872,Dog,Dachshund - Standard Wire Haired
+890,Cat,Persian
+903,Dog,Shiba Inu
+906,Dog,Akita
+929,Dog,Whippet
+956,Dog,German Shorthaired Pointer
+960,Cat,Norwegian Forest
+970,Dog,Barbet
+993,Dog,Pyrenean Mountain Dog (Great Pyrenees)
+1036,Dog,Newfoundland
+1087,Cat,American Bobtail
+1112,Dog,Bullmastiff
+1125,Dog,Australian Cattle Dog/Blue Heeler
+1135,Cat,Devon Rex
+1154,Cat,Ragdoll
+1238,Dog,Catahoula Cur/Leopard Dog
+1272,Dog,Texas Blue Lacey
+1290,Dog,Porkie
+1326,Dog,Treeing Walker Coonhound
+1379,Dog,Collie - Rough
+1389,Dog,German Wirehaired Pointer
+1427,Dog,Shiloh Shepherd
+1437,Dog,English Setter
+1453,Dog,Miniature Bull Terrier
+1463,Dog,Victorian Bulldog
+1475,Dog,Schnoodle
+1481,Dog,Sheepadoodle
+1521,Dog,Airedale Terrier
+1526,Dog,Tibetan Terrier
+1582,Dog,Springer Spaniel
+1773,Dog,Anatolian Shepherd
+1794,Dog,Chinese Crested
+1811,Dog,Dalmatian
+1842,Dog,Pointer
+1889,Dog,Old English Sheepdog
+1910,Dog,Papillon
+1915,Dog,Irish Terrier
+1917,Dog,Scottish Deerhound
+1933,Dog,Field Spaniel
+1938,Cat,Burmese
+1945,Dog,Cairn Terrier
+2018,Dog,American Bully
+2019,Dog,Fila Brasileiro/Brazillian Mastiff
+2042,Dog,Staffordshire Bull Terrier
+2190,Cat,Egyptian Mau
+2207,Cat,Scottish Fold
+2245,Dog,Beauceron
+2246,Dog,Brittany Spaniel
+2301,Dog,English Foxhound
+2315,Dog,English Cocker Spaniel
+2359,Dog,Fox Terrier
+2369,Dog,Bull Terrier - Standard
+2374,Cat,Exotic Longhair
+2409,Dog,Parson Russell Terrier
+2454,Dog,Spanish Water Dog
+2499,Dog,Lakeland Terrier
+2512,Dog,Tibetan Spaniel
+2564,Dog,American Cocker Spaniel
+2581,Dog,Mexican Hairless
+2594,Dog,Bedlington Terrier
+2601,Dog,Briard
+2608,Dog,German Spitz
+2642,Dog,Large Munsterlander
+2684,Dog,Old English Mastiff
+2694,Dog,Brussels Griffon (Brabancon)
+2717,Dog,Flat-Coated Retriever
+2804,Dog,Scottish Terrier
+3035,Dog,Long Haired Chihuahua
+3101,Dog,Dogue de Bordeaux
+3122,Dog,Bull Boxer
+3166,Dog,Boykin Spaniel
+3182,Dog,Bouvier des Flandres
+3267,Dog,Spinone Italiano
+3320,Cat,Exotic Shorthair
+3355,Dog,Poochon
+3381,Dog,Redbone Coonhound
+3411,Dog,Skye Terrier
+3488,Dog,Neapolitan Mastiff
+3516,Dog,Kerry Blue Terrier
+3528,Dog,Pekingese
+3638,Dog,Bearded Collie
+3772,Dog,Toy Fox Terrier
+3855,Dog,Welsh Springer Spaniel
+3886,Cat,Snowshoe
+3948,Dog,Australian Cattle Dog/Red Heeler
+3970,Dog,Argentine Dogo
+4079,Dog,Snoodle
+4117,Dog,Norwich Terrier
+4118,Dog,Mastiff
+4168,Dog,Frenchton
+4259,Dog,Malinois Belgian Shepherd
+4264,Dog,Giant Schnauzer
+4498,Cat,Tonkinese
+4546,Dog,Bloodhound
+4641,Dog,Old Victorian Bulldogge
+4760,Dog,Brittany
+4802,Cat,Cornish Rex
+4841,Dog,Toy Australian Shepherd
+4860,Dog,Patterdale/Fell Terrier
+4998,Dog,Afghan Hound
+5122,Dog,Blue Tick Coonhound
+5559,Dog,Native American Indian
+5597,Dog,Entlebucher Mountain Dog
+5715,Dog,Black Russian Terrier
+5729,Dog,Mountain Cur
+5762,Dog,American Mastiff
+5785,Dog,Berger Picard/Picardy Sheepdog
+5916,Dog,Cobber Dog
+5945,Dog,Manchester Terrier
+6032,Dog,Australian Kelpie
+6222,Dog,Old Boston Bulldogge
+6247,Dog,American English Coonhound
+6364,Dog,Norwegian Elkhound
+6543,Dog,Polish Lowland Sheepdog
+6552,Dog,Clumber Spaniel
+6568,Dog,Boerboel
+6858,Dog,Dingo/Carolina
+6893,Dog,Spanish Mastiff
+6904,Dog,Perro de Presa Canario
+7155,Cat,Japanese Bobtail
+7398,Dog,Mi-Ki
+7610,Dog,Schipperke
+7922,Cat,Savannah
+8296,Dog,Basset Fauve de Bretagne
+8379,Cat,Havana Brown
+8529,Dog,Norfolk Terrier
+8635,Dog,Coonhound
+8698,Dog,Pudelpointer
+9151,Dog,Dandie Dinmont Terrier
+9259,Dog,German Pinscher
+9312,Dog,Terripoo
+9423,Dog,Wirehair Vizsla
+9764,Dog,Prague Ratter
+9861,Dog,Anatolian/Karabash Shepherd
+9864,Dog,Landseer
+9885,Dog,Kooikerhondje
+9988,Dog,Stabyhoun (Stabij)
+10118,Dog,Northern Inuit
+10424,Dog,Saluki (Gazelle Hound)
+10560,Dog,American Water Spaniel
+10597,Dog,Tervuren Belgian Shepherd
+10759,Dog,Irish Water Spaniel
+10836,Dog,American Black and Tan Coonhound
+10921,Dog,Kai Ken
+11273,Cat,Bombay
+11296,Cat,Turkish Angora
+11390,Dog,Smooth Fox Terrier
+11581,Dog,Scottish (Scottie)/Aberdeen Terrier
+12063,Dog,Ibizan Hound
+12079,Dog,Pomapoo
+12113,Dog,Korean Jindo
+12441,Cat,British Longhair
+12513,Cat,Peterbald
+12574,Dog,Plott
+12662,Dog,Wire Fox Terrier
+12787,Dog,Hovawart
+13168,Dog,Cirneco dell'Etna
+13521,Dog,Tibetan Mastiff
+13614,Dog,Eurasian/Eurasier
+13717,Dog,Affenpinscher
+13906,Dog,Belgian Sheepdog
+13915,Cat,Ocicat
+14006,Dog,Australian Silky Terrier
+14336,Dog,Aidi
+14879,Dog,Tosa
+15046,Dog,Borzoi/Russian Wolfhound
+15075,Dog,Karelian Bear Dog
+15628,Dog,Kuvasz
+15930,Dog,Portuguese Podengo
+15993,Dog,Black and Tan Coonhound
+16032,Cat,Nebelung
+16706,Cat,Chartreux
+17369,Dog,Drever
+17820,Dog,Irish Red and White Setter
+18246,Dog,Puli
+18778,Dog,Japanese Spitz
+19156,Dog,Canary
+19559,Dog,Otterhound
+19707,Cat,Munchkin
+20118,Dog,Caucasian Ovcharka
+20420,Cat,Korat
+20513,Dog,Bracco Italiano
+20699,Dog,Swedish Vallhund
+20828,Dog,Central Asian Shepherd
+21348,Cat,LaPerm
+21724,Cat,American Wirehair
+21944,Dog,Pharaoh Hound
+22339,Dog,Icelandic sheepdog
+22388,Dog,American Bandogge Mastiff
+23119,Cat,Lykoi
+23560,Dog,Pumi
+24253,Dog,Bavarian Mountain Hound
+24356,Dog,Bergamasco Sheepdog
+24413,Dog,Petit Basset Griffon Vendeen
+25692,Dog,Appenzeller Sennenhunde
+25968,Dog,Portuguese Water
+26416,Dog,English Toy Spaniel
+26542,Dog,Sealyham Terrier
+27069,Dog,Cesky Terrier
+27688,Cat,Singapura
+28249,Dog,Australian Terrier
+28330,Dog,Lowchen
+28410,Dog,Peruvian Inca Orchid
+28499,Cat,Toyger
+28610,Dog,Havana Silk
+28642,Dog,Chipoo
+29326,Cat,Turkish Van
+29949,Dog,Aussalier
+30643,Dog,Shikoku
+30682,Dog,St. Johns Waterdog
+30928,Dog,Peekapoo
+31982,Dog,Russian Bolonka
+32460,Dog,Ganaraskan
+32662,Dog,Finnish Lapphund
+33276,Cat,Selkirk Rex
+34351,Cat,Chausie
+37186,Dog,Small Munsterlander
+37757,Dog,Pyrenees Braque Francais
+38037,Dog,Norwegian Buhund
+38097,Cat,Somali
+39421,Dog,Curly-Coated Retriever
+39593,Dog,Australian Stumpy Tail Cattle
+40302,Dog,Akbash Dog
+41505,Dog,Doxiepoo
+42551,Dog,Bantam Bulldog
+42586,Cat,Colorpoint Shorthair
+44255,Dog,Mudi
+45243,Dog,American Hairless Terrier
+45316,Dog,Canaan Dog
+46407,Dog,Glen of Imaal Terrier
+47271,Dog,Komondor
