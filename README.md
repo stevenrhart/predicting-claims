@@ -1,4 +1,4 @@
-# Predicting Pet Insurance Claims - Data Wrangling
+# Predicting Pet Insurance Claims
 
 ## 1 Introduction
 
