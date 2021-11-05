@@ -26,20 +26,25 @@ See the [complete report](#insert link to report)
 <p align = 'justify'>The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021. </p>
 
 <p align = 'justify'>**PetData.csv contains the following columns:**
-* PetId - a unique number that identifies enrolled pets
-* EnrollDate - the date of customer enrollment
-* Species - species of pet, dog or cat
-* Breed - breed of pet
-* PetAge - the age of the pet at enrollment (not necessarily the current age of the pet)
-* Premium - the monthly premium (in USD) of the pet’s insurance policy
-* Deductible - the deductible (in USD) of the pet’s insurance policy
-* EnrollPath - indicates whether the member enrolled via company website or over the phone </p>
+<ul>
+    <li>PetId - a unique number that identifies enrolled pets </li>
+    <li>EnrollDate - the date of customer enrollment </li>
+    <li>Species - species of pet, dog or cat </li>
+    <li>Breed - breed of pet </li>
+    <li>PetAge - the age of the pet at enrollment (not necessarily the current age of the pet) </li>
+    <li>Premium - the monthly premium (in USD) of the pet’s insurance policy </li>
+    <li>Deductible - the deductible (in USD) of the pet’s insurance policy </li>
+    <li>EnrollPath - indicates whether the member enrolled via company website or over the phone </li> 
+</p>
 
 <p align = 'justify'>**ClaimsData.csv contains the following columns:**
-* PetId - a unique number that identifies enrolled pets
-* ClaimId - a unique number that identifies individual claims made by our members
-* ClaimDate - date of claim
-* AmountClaimed - amount of claim </p>
+<ul>
+    <li>PetId - a unique number that identifies enrolled pets </li>
+    <li>ClaimId - a unique number that identifies individual claims made by our members </li>
+    <li>ClaimDate - date of claim </li>
+    <li>AmountClaimed - amount of claim </li>
+</ul>
+</p>
 
 
 ## DATA WRANGLING <a id ='wrangling'></a>
