@@ -25,7 +25,7 @@ See the [complete report](#insert link to report)
 
 <p align = 'justify'>The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021. </p>
 
-<p align = 'justify'>**PetData.csv contains the following columns:**
+<p align = 'justify'><strong>PetData.csv contains the following columns:</strong>
 <ul>
     <li>PetId - a unique number that identifies enrolled pets </li>
     <li>EnrollDate - the date of customer enrollment </li>
@@ -35,9 +35,10 @@ See the [complete report](#insert link to report)
     <li>Premium - the monthly premium (in USD) of the pet’s insurance policy </li>
     <li>Deductible - the deductible (in USD) of the pet’s insurance policy </li>
     <li>EnrollPath - indicates whether the member enrolled via company website or over the phone </li> 
+</ul>
 </p>
 
-<p align = 'justify'>**ClaimsData.csv contains the following columns:**
+<p align = 'justify'><strong>ClaimsData.csv contains the following columns:</strong>
 <ul>
     <li>PetId - a unique number that identifies enrolled pets </li>
     <li>ClaimId - a unique number that identifies individual claims made by our members </li>
