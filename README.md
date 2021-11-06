@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/stevenrhart/predicting-claims/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Executive Summary](#exec-summary)** | **[Data](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
+**[Executive Summary](#exec-summary)** | **[Datasets](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
 
 See the [presentation](#insert link to presentation)
 
@@ -13,33 +13,16 @@ See the [complete report](#insert link to report)
 
 ## EXECUTIVE SUMMARY <a id='overview'></a>
 
-Insert background paragraph on pet insurance industry
+Insert background paragraph on pet insurance industry (and picture?)
 
 When a pet insurance policy holder incurs veterinary expenses related to their enrolled pet, they can submit claims for reimbursement, and the insurance company reimburses eligible expenses. To price insurance products correctly, the insurance company needs to have a good idea of the amount their policy holders are likely to claim in future policy years. The goal of this project is to create a machine learning model to predict how much (in dollars) a given policy holder will claim for during their second policy year based on pet information and claims data from their first policy year. 
 
 Insert paragraph on summary results
 
 
-## DATA <a id ='data'></a>
+## DATASETS <a id ='data'></a>
 
-The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021.
-
-
-### PetData.csv columns:
-* `PetId` - a unique number that identifies enrolled pets 
-* `EnrollDate` - the date of customer enrollment 
-* `Species` - species of pet, dog or cat
-* `Breed` - breed of pet
-* `PetAge` - the age of the pet at enrollment (not necessarily the current age of the pet)
-* `Premium` - the monthly premium (in USD) of the pet’s insurance policy 
-* `Deductible` - the deductible (in USD) of the pet’s insurance policy 
-* `EnrollPath` - indicates whether the member enrolled via company website or over the phone  
-
-### ClaimsData.csv columns:
-* `PetId` - a unique number that identifies enrolled pets
-* `ClaimId` - a unique number that identifies individual claims made by our members
-* `ClaimDate`- date of claim
-* `AmountClaimed` - amount of claim
+The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv` obtained from a national pet insurance provider. The PetData file contains data for 50000 unique pets who enrolled for policies during the 2018 calendar year. The pet data includes 8 features which provide information about the type of pet (e.g., species, breed, age) and the cost of the policy (i.e., premium and deductible). The claim data includes 4 features detailing insurance claims recorded over a 3-year period between 2018 and 2020 providing the claim date and amount. The two datasets are linked by a common feature, PetId, which can be used to understand the claims totals for each individual pet. prediction.
 
 
 ## DATA WRANGLING <a id ='wrangling'></a>
@@ -54,23 +37,12 @@ Overall, the two datasets were relatively clean and the bulk of the data wrangli
 * **Premium** - Premiums fall into a wide range with a few outlier values close to $1000 
 * **Deductible** - Deductibles are fairly well distributed and appear to be stratified across a range of common values 
 * **Median Claims** - For cats and dogs, the median value for total number and total amount of claims is 0 
-* **Outlier Claims** - On the flip side, both species have some significant outliers in both categories (number and amount of claims)  
-
-
-The bulk of the cleaning work was required in the Breed column of the pets data and to clean up a few issues related to claims. In addition, the datasets needed to be merged together to prepare for analysis on claims amounts. Below is a list of some of the key steps performed as part of the wrangling step.
-
-
-### Key Data Wrangling Steps:
-* Removed special characters and extra whitespace from all other breed names
-* Simplified 'Mixed Breed' entries and added a new feature to designate whether a pet is 'mixed' or not
-* Converted PetAge from a categorical column to a numeric column capturing a pet's age in years
-* Removed claims for pets and dates outside of our analysis window and removed zero and negative valued claims 
-* Merged the two datasets into a single dataframe for further analysis
+* **Outlier Claims** - On the flip side, both species have some significant outliers in both categories (number and amount of claims)
 
 
 ## EDA <a id ='eda'></a>
 
-TBD intro paragraph
+During exploratory data analysis, 
 
 ### Dogs tend to have more claims and higher claims totals on average
 
