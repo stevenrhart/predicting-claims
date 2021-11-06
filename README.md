@@ -50,7 +50,7 @@ During exploratory data analysis,
 
 #### And as a result, dogs tend to have higher premiums
 
-<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premiums-by-Species.png" />
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premium-by-Species.png" />
 
 **Breed**
 * As the average number of claims for a breed goes up, the average total claims amount goes up in a linear fashion
