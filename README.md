@@ -4,8 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/stevenrhart/predicting-claims/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# Update ToC**
-**[Executive Summary](#exec-summary)** | **[Datasets](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
+**[Executive Summary](#exec-summary)** | **[Data](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
 
 See the [presentation](#insert link to presentation)
 
@@ -21,13 +20,13 @@ See the [complete report](#insert link to report)
 <p align="justify">Insert paragraph on summary results </p>
 
 
-## DATASETS <a id ='data'></a>
+## DATA <a id ='data'></a>
 
 <p align = 'justify'>The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021. </p>
 
 <p align = 'justify'><strong>PetData.csv contains the following columns:</strong>
 <ul>
-    <li>PetId - a unique number that identifies enrolled pets </li>
+    <li><code>PetId</code> - a unique number that identifies enrolled pets </li>
     <li>EnrollDate - the date of customer enrollment </li>
     <li>Species - species of pet, dog or cat </li>
     <li>Breed - breed of pet </li>
