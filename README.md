@@ -36,7 +36,9 @@ See the [complete report](#insert link to report)
     <li><code>EnrollPath</code> - indicates whether the member enrolled via company website or over the phone </li> 
 </ul>
 </p>
+
 The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021.
+
 
 **PetData.csv columns:**
 * `PetId` - a unique number that identifies enrolled pets 
