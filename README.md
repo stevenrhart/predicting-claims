@@ -22,65 +22,94 @@ See the [complete report](#insert link to report)
 
 ## DATA <a id ='data'></a>
 
-<p align = 'justify'>The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021. </p>
+<p align = 'justify'>The underlying source data for the project consists of two files - <code>PetData.csv</code> and <code>ClaimData.csv</code>. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021. </p>
 
-<p align = 'justify'><strong>PetData.csv contains the following columns:</strong>
+<p align = 'justify'><strong>PetData.csv columns:</strong>
 <ul>
     <li><code>PetId</code> - a unique number that identifies enrolled pets </li>
-    <li>EnrollDate - the date of customer enrollment </li>
-    <li>Species - species of pet, dog or cat </li>
-    <li>Breed - breed of pet </li>
-    <li>PetAge - the age of the pet at enrollment (not necessarily the current age of the pet) </li>
-    <li>Premium - the monthly premium (in USD) of the pet’s insurance policy </li>
-    <li>Deductible - the deductible (in USD) of the pet’s insurance policy </li>
-    <li>EnrollPath - indicates whether the member enrolled via company website or over the phone </li> 
+    <li><code>EnrollDate</code> - the date of customer enrollment </li>
+    <li><code>Species</code> - species of pet, dog or cat </li>
+    <li><code>Breed</code> - breed of pet </li>
+    <li><code>PetAge</code> - the age of the pet at enrollment (not necessarily the current age of the pet) </li>
+    <li><code>Premium</code> - the monthly premium (in USD) of the pet’s insurance policy </li>
+    <li><code>Deductible</code> - the deductible (in USD) of the pet’s insurance policy </li>
+    <li><code>EnrollPath</code> - indicates whether the member enrolled via company website or over the phone </li> 
 </ul>
 </p>
+The underlying source data for the project consists of two files - `PetData.csv` and `ClaimData.csv`. The former contains enrollment and premium data for 50000 pets that enrolled for insurance during the 2018 calendar year, and the latter contains the dates and dollar amounts of the associated claims for these pets between 2018 and 2021.
 
-<p align = 'justify'><strong>ClaimsData.csv contains the following columns:</strong>
+**PetData.csv columns:**
+* `PetId` - a unique number that identifies enrolled pets 
+* `EnrollDate` - the date of customer enrollment 
+* `Species` - species of pet, dog or cat
+* `Breed` - breed of pet
+* `PetAge` - the age of the pet at enrollment (not necessarily the current age of the pet)
+* `Premium` - the monthly premium (in USD) of the pet’s insurance policy 
+* `Deductible` - the deductible (in USD) of the pet’s insurance policy 
+* `EnrollPath` - indicates whether the member enrolled via company website or over the phone  
+
+
+
+<p align = 'justify'><strong>ClaimsData.csv columns:</strong>
 <ul>
-    <li>PetId - a unique number that identifies enrolled pets </li>
-    <li>ClaimId - a unique number that identifies individual claims made by our members </li>
-    <li>ClaimDate - date of claim </li>
-    <li>AmountClaimed - amount of claim </li>
-</ul>
-</p>
+    <li><code>PetId</code> - a unique number that identifies enrolled pets </li>
+    <li><code>ClaimId</code> - a unique number that identifies individual claims made by our members </li>
+    <li><code>ClaimDate</code> - date of claim </li>
+    <li><code>AmountClaimed</code> - amount of claim </li>
+</ul></p>
 
 
 ## DATA WRANGLING <a id ='wrangling'></a>
 
-<p align = 'justify'>Overall, the two datasets were relatively clean and the bulk of the data wrangling process consisted of verifying the data and determining how to combine the pets data with the associated claims data in preparation for exploratory data analysis. </p>
+<p align = 'justify'>Overall, the two datasets were relatively clean and the bulk of the data wrangling process consisted of data verification and determining how best to combine the pets data with the associated claims data. A few columns required some additional manipulation in preparation for exploratory data analysis.</p>
     
-<p align = 'justify'>**Key Observations:**
-* Number of Unique Pets - Verified 50,000 unique pets (based on PetId) with an even spread of enroll dates throughout the 2018 calendar year
-* 
-* EnrollDate - Confirmed a reasonable spread of enroll dates over the period included in the dataset
-Species - Observed that the data includes only two species, Cats and Dogs (with dogs greatly outnumbering cats more than 5 to 1)
-Breed - Reviewed entries for Breed and made the following observations/updates:
-Cleaned up some of the "Mixed Breed" entries for dogs to remove weight ranges while retaining the size category for each
-Grouped Labrador Retriever breeds, removing the color designation completely
-Removed special characters and extra whitespace from all other breed names (cats and dogs)
-Added a new column to designate whether an animal is mixed breed or not
-PetAge - Created a new column to capture a pet's age in years at the time of enrollment and a second column to designate pets that were very young when enrolled (< 7 weeks old)
-Premium - Identified a handful of outlier premiums worthy of a more thorough review in EDA
-Deductible - Verified that the distribution of deductible amounts seems reasonable
+<p align = 'justify'><strong>Key Observations:</strong>
+<ul>
+    <li>Pet Count - Verified 50,000 unique pets (based on PetIds)</li>
+    <li>Species - Data consists of two species of pets, cats and dogs (with dogs outnumbering cats 5 to 1)</li>
+    <li>Breed - Observed 373 unique breeds in total (55 cat and 318 dog) </li>
+    <li>Age - Pet ages range between 0 (i.e., &lt; 1 year) and 13 </li>
+    <li>Premium - Premiums fall into a wide range with a few outlier values close to $1000 </li>
+    <li>Deductible - Deductibles are fairly well distributed and appear to be stratified across a range of common values </li>
+    <li>Median Claims - For cats and dogs, the median value for total number and total amount of claims is 0 </li>
+    <li>Outlier Claims - On the flip side, both species have some significant outliers in both categories (number and amount of claims) </li>
+</ul></p>   
 
-Claims data:
-PetId - Removed claims data for PetIds not included in our pets dataset (ids > 49999)
-ClaimId - Dropped the ClaimId column as no duplicates or missing values were discovered and it seemed to be of low value for our analysis
-ClaimDate - Observed and removed claims with dates prior to a pet's enrollment or beyond the 2-year window of our analysis
-AmountClaimed:
-Removed negative value claims and made note of outlier claims amounts for further review in EDA
-Created new columns to summarize claims data by PetId including number of claims in each year, average claim amount in each year and total claim amount in each year
-
-Merged the pets and claims data into a new dataframe
-
-</p>
+<p align = 'justify'>While overall, the data was relatively clean, some columns needed extra attention. The bulk of the cleaning work was required in the Breed column of the pets data and to clean up a few issues related to claims. In addition, the datasets needed to be merged together to prepare for analysis on claims amounts. Below is a list of some of the key steps performed as part of the wrangling step.</p>
+    
+<p align = 'justify'><strong>Key Data Wrangling Steps:</strong>
+<ul>
+    <li>Removed special characters and extra whitespace from all other breed names </li> 
+    <li>Simplified 'Mixed Breed' entries and added a new feature to designate whether a pet is 'mixed' or not</li>
+    <li>Converted PetAge from a categorical column to a numeric column capturing a pet's age in years</li> 
+    <li>Removed claims for pets and dates outside of our analysis window and removed zero and negative valued claims </li> 
+    <li>Merged the two datasets into a single dataframe for further analysis</li>
+</ul></p>
 
 
 ## EDA <a id ='eda'></a>
 
-<p align = 'justify'>TBD </p>
+<p align = 'justify'> </p>
+
+**Species**
+* Dogs and cats display similar patterns for claims, but on average, dogs tend to have more claims and higher claims totals
+* Dogs and cats both have a broad range of premiums and deductibles with similar distributions for each, but *on average*, dogs have higher premiums and higher deductibles than cats
+* Around one half of pets in both species have no claims at all, but cats are more likely to have claims in one or both years
+
+**Pet Age**
+* Average total claims amounts and the variability of total claims amounts tend to rise with age 
+* Age matters when it comes to claims amounts, but it doesn't follow a straighforward linear relationship
+
+**Breed**
+* As the average number of claims for a breed goes up, the average total claims amount goes up in a linear fashion
+* As the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the linear trend line
+* Breed matters when it comes to total claims amounts and we'll need to determine how to handle this categorical feature given the large number of unique values
+
+**Correlation**
+* Generally, we have weak to no correlation between our features and our target variable (AmtClaimsYr2)
+
+**Dropped Columns**
+* Based on our analysis above, we decided to drop 'EnrollPath' and 'MixedBreed' from our dataframe
 
 
 ## PREDICTIVE MODELING <a id ='model'></a>
