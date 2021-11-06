@@ -33,7 +33,7 @@ Overall, the two datasets were relatively clean and the bulk of the data wrangli
 * **Pet Count** - Verified 50,000 unique pets (based on PetIds)
 * **Species** - Data consists of two species of pets, cats and dogs (with dogs outnumbering cats 5 to 1)
 * **Breed** - Observed 373 unique breeds in total (55 cat and 318 dog) 
-* **Age** - Pet ages range between 0 (i.e., &lt; 1 year) and 13 
+* **Age** - Pet ages range between 0 (i.e., < 1 year) and 13 
 * **Premium** - Premiums fall into a wide range with a few outlier values close to $1000 
 * **Deductible** - Deductibles are fairly well distributed and appear to be stratified across a range of common values 
 * **Median Claims** - For cats and dogs, the median value for total number and total amount of claims is 0 
@@ -44,16 +44,13 @@ Overall, the two datasets were relatively clean and the bulk of the data wrangli
 
 During exploratory data analysis, 
 
-### Dogs tend to have more claims and higher claims totals on average
+#### Dogs tend to have more claims and higher claims totals on average
 
 <img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Total-Claims-by-Species.png" />
 
-* Dogs and cats both have a broad range of premiums and deductibles with similar distributions for each, but *on average*, dogs have higher premiums and higher deductibles than cats
-* Around one half of pets in both species have no claims at all, but cats are more likely to have claims in one or both years
+#### And as a result, dogs tend to have higher premiums
 
-**Pet Age**
-* Average total claims amounts and the variability of total claims amounts tend to rise with age 
-* Age matters when it comes to claims amounts, but it doesn't follow a straighforward linear relationship
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premiums-by-Species.png" />
 
 **Breed**
 * As the average number of claims for a breed goes up, the average total claims amount goes up in a linear fashion
