@@ -74,7 +74,7 @@ TBD intro paragraph
 
 ### Dogs tend to have more claims and higher claims totals on average
 
-![Total Claims by Species]('../figures/Total-Claims-by-Species.png')
+![Total Claims by Species](https://github.com/stevenrhart/predicting-claims/blob/main/figures/Total-Claims-by-Species.png)
 
 * Dogs and cats both have a broad range of premiums and deductibles with similar distributions for each, but *on average*, dogs have higher premiums and higher deductibles than cats
 * Around one half of pets in both species have no claims at all, but cats are more likely to have claims in one or both years
