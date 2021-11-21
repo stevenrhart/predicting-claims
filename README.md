@@ -1,4 +1,4 @@
-# Predicting Pet Insurance Claims in the Second Policy Year
+# Predicting Pet Insurance Claims
 
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/stevenrhart/predicting-claims/graphs/commit-activity)
