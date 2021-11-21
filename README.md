@@ -54,6 +54,8 @@ During exploratory data analysis, a number of observations stood out in relation
 
 Looking at the data from the perspective of pet breeds, we see that as the average number of claims for a breed goes up, the average total claims amount goes up in almost a linear fashion. That said, one limitation of the data is that there is a significant imbalance in terms of the number of pets per breed. Generally, as the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the overall linear trend line.
 
+And... unsurprisingly, cat breeds tend to occupy the lower left quadrant of the plot indicating fewer claims and lower total claims on average when compared to dogs.
+
 #### We see a linear trend in average number and amount of claims by species as the number of pets increases 
 
 <img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Avg-Claims-by-Species-cropped.png" />
@@ -71,4 +73,11 @@ Looking at the data from the perspective of pet breeds, we see that as the avera
 
 ## FUTURE RESEARCH <a id = 'future'></a>
 
-- <p align = 'justify'>TBD</p>
+Although we observed a dramatic improvement in model performance using a gradient boosting regressor, our mean absolute error still leaves quite a bit of room for improvement. 
+
+The following are recommendations for potential next steps to refine or further expand upon the work done in this project:
+
+* **Obtain a more balanced dataset** - The dataset for this project is highly imbalanced across a number of features (species, breed, age, etc.). While this imbalance likely reflects the population of pets, it presents challenges when building a model that predicts the claims amount for a specific pet. By starting with a more balanced dataset, it's possible the predictive accuracy could be improved overall.
+* **Engineer additional features** - Feature engineering in this project was largely focused on relating pet age and breed to claims data. It's possible that additional feature engineering could be done to improve model performance. Suggestions include:
+    * **Timing of Claims** As part of data wrangling, we rolled up our claims data into totals and averages per pet. But it stands to reason that the timing of when claims are submitted could be a powerful predictor of claims amounts in the second policy year. For example, a pet with \$10,000 in claims in the first 3 months of year 1 may be less likely to have claims in year 2 when compared with a pet having an equal amount of claims in the last month of year 1. 
+    * **Additional Breed Data** It is widely known that different pet breeds have different characteristics, but our limited dataset did not include any data specific to each breed. By including additional breed specific data in our analysis, it may be possible to engineer meaningful features to improve the predictive power of our model. Examples of this could be including an average weight or average lifespan per breed or engineering a feature that calculates the 'risk index' for a pet given their age, breed and species. 
