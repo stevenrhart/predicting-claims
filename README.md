@@ -58,14 +58,6 @@ Looking at the data from the perspective of pet breeds, we see that as the avera
 
 <img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Avg-Claims-by-Species-cropped.png" />
 
-Finally, we see little to no correlation between our target, total claims in second policy year, and any of the features in our data. And, this lack of correlation holds true for both cats and dogs.
-
-#### There is weak to no correlation between our target and our features in the data
-
-<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Feature-Correlation-Dogs.png" />
-
-<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Feature-Correlation-Cats.png" />
-
 
 ## PREDICTIVE MODELING <a id ='model'></a>
 
