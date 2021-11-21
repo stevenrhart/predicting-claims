@@ -68,7 +68,29 @@ And... unsurprisingly, cat breeds tend to occupy the lower left quadrant of the 
 
 ## RESULTS <a id='results'></a>
 
-<p align = 'justify'> TBD </p>
+In this project, we evaluated data for 50,000 pet insurance customers with a goal of building a model to predict the total claims amount in the second policy year based on basic info about the pet (breed, age, species, etc.) and claims data (number of claims, amount of each claim, etc.) for the first policy year. We evaluated a variety of different models (listed below) and in the end, found the best performance using a Gradient Boosting Regressor with some parameter tuning. 
+
+Using our best model on our test data, we achieved a mean absolute error of ~638. While still somewhat high, this is down from ~1020 using our baseline model of a simple dummy regressor. This represents an improved accuracy of nearly \$400 per customer. When considered in the context of a customer base of 65-75 million, these results are significant and could lead to substantial savings for the business in terms of improved pricing and risk models.
+
+**Model Evaluation Results:**
+
+| Regressor | Notes | Score |
+| :- | :- | -: |
+| Dummy Regressor | Using the mean | 1020.41|
+| Simple Linear Regressor | | 930.46 |
+| Linear Regressor | w/ feature selection | 930.40 |
+| Simple Lasso Regressor | | 930.28 |
+| Lasso Regressor | simple tuning | 930.18 |
+| Gradient Boosting Regressor | | 932.25 |
+| Gradient Boosting | n_iter & learning_rate tuning | 931.92 |
+| Gradient Boosting | loss & alpha tuning | 677.75 |
+| Gradient Boosting | tree-specific tuning | 673.82 |
+
+**Results with Test Data:**
+
+| Regressor | Notes | Score |
+| :- | :- | -: |
+| Gradient Boosting | best estimator | 638.64 |
 
 
 ## FUTURE RESEARCH <a id = 'future'></a>
