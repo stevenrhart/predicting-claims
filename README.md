@@ -52,12 +52,19 @@ During exploratory data analysis, a number of observations stood out in relation
 
 <img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premium-by-Species-cropped.png" />
 
-**Breed**
-* As the average number of claims for a breed goes up, the average total claims amount goes up in a linear fashion
-* As the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the overall linear trend line
+Looking at the data from the perspective of pet breeds, we see that as the average number of claims for a breed goes up, the average total claims amount goes up in almost a linear fashion. That said, one limitation of the data is that there is a significant imbalance in terms of the number of pets per breed. Generally, as the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the overall linear trend line.
 
-**Correlation**
-* Generally, we have weak to no correlation between our features and our target variable (AmtClaimsYr2)
+#### We see a linear trend in average number and amount of claims by species as the number of pets increases 
+
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Avg-Claims-by-Species-cropped.png" />
+
+Finally, we see little to no correlation between our target, total claims in second policy year, and any of the features in our data. And, this lack of correlation holds true for both cats and dogs.
+
+#### There is weak to no correlation between our target and our features in the data
+
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Feature-Correlation-Dogs.png" />
+
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Feature-Correlation-Cats.png" />
 
 
 ## PREDICTIVE MODELING <a id ='model'></a>
