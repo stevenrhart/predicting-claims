@@ -37,25 +37,24 @@ Overall, the two datasets were relatively clean and the bulk of the data wrangli
 * **Premium** - Premiums fall into a wide range with a few outlier values close to $1000 
 * **Deductible** - Deductibles are fairly well distributed and appear to be stratified across a range of common values 
 * **Median Claims** - For cats and dogs, the median value for total number and total amount of claims is 0 
-* **Outlier Claims** - On the flip side, both species have some significant outliers in both categories (number and amount of claims)
+* **Outlier Claims** - Both species have some significant outliers in both categories (number and amount of claims)
 
 
 ## EDA <a id ='eda'></a>
 
-During exploratory data analysis, 
+During exploratory data analysis, a number of observations stood out in relation to overall claims totals. In general, dog owners have more claims and higher total claims amounts than cat owners. As expected, this tends to translate to higher premiums. 
 
 #### Dogs tend to have more claims and higher claims totals on average
 
-<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Total-Claims-by-Species.png" />
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Total-Claims-by-Species-cropped.png" />
 
 #### And as a result, dogs tend to have higher premiums
 
-<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premium-by-Species.png" />
+<img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Premium-by-Species-cropped.png" />
 
 **Breed**
 * As the average number of claims for a breed goes up, the average total claims amount goes up in a linear fashion
-* As the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the linear trend line
-* Breed matters when it comes to total claims amounts and we'll need to determine how to handle this categorical feature given the large number of unique values
+* As the number of pets in a breed increases, the variability in claims (number and amount) goes down, moving the breed closer to the overall linear trend line
 
 **Correlation**
 * Generally, we have weak to no correlation between our features and our target variable (AmtClaimsYr2)
