@@ -6,7 +6,7 @@
 
 **[Executive Summary](#exec-summary)** | **[Datasets](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
 
-See the [presentation](#insert link to presentation)
+See the [presentation](https://github.com/stevenrhart/predicting-claims/blob/main/report/Predicting%20Pet%20Insurance%20Claims.pdf)
 
 See the [complete report](#insert link to report)
 
