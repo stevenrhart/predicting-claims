@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/stevenrhart/predicting-claims/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Executive Summary](#exec-summary)** | **[Datasets](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Modeling](#model)** | **[Results](#results)** | **[Future](#future)**
+**[Executive Summary](#exec-summary)** | **[Datasets](#data)** | **[Wrangling](#wrangling)** | **[EDA](#eda)** | **[Results](#results)** | **[Future](#future)**
 
 See the [presentation](https://github.com/stevenrhart/predicting-claims/blob/main/report/Predicting%20Pet%20Insurance%20Claims.pdf)
 
@@ -61,12 +61,7 @@ And... unsurprisingly, cat breeds tend to occupy the lower left quadrant of the 
 <img src="https://github.com/stevenrhart/predicting-claims/blob/main/figures/Avg-Claims-by-Species-cropped.png" />
 
 
-## PREDICTIVE MODELING <a id ='model'></a>
-
-<p align = 'justify'>TBD </p>
-
-
-## RESULTS <a id='results'></a>
+## PREDICTIVE MODELING RESULTS <a id='results'></a>
 
 In this project, we evaluated data for 50,000 pet insurance customers with a goal of building a model to predict the total claims amount in the second policy year based on basic info about the pet (breed, age, species, etc.) and claims data (number of claims, amount of each claim, etc.) for the first policy year. We evaluated a variety of different models (listed below) and in the end, found the best performance using a Gradient Boosting Regressor with some parameter tuning. 
 
