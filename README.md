@@ -8,16 +8,16 @@
 
 See the [presentation](https://github.com/stevenrhart/predicting-claims/blob/main/report/Predicting%20Pet%20Insurance%20Claims.pdf)
 
-See the [complete report](#insert link to report)
+See the [complete report](https://github.com/stevenrhart/predicting-claims/blob/main/report/Predicting%20Pet%20Insurance%20Claims%20Final%20Report.pdf)
 
 
 ## EXECUTIVE SUMMARY <a id='overview'></a>
 
-Insert background paragraph on pet insurance industry (and picture?)
+In 2020, the global pet insurance market is estimated to exceed 4 billion dollars [1](https://www.grandviewresearch.com/industry-analysis/pet-insurance-market). And in the US alone, the market value is anticipated to be close to half this total amount ($1.6 Billion USD) with sustained year-over-year growth of nearly 15% for the foreseeable future [2](https://www.ibisworld.com/industry-statistics/market-size/pet-insurance-united-states/). With so much potential revenue at stake, the need for competitive policy pricing is as important as ever.
 
-When a pet insurance policy holder incurs veterinary expenses related to their enrolled pet, they can submit claims for reimbursement, and the insurance company reimburses eligible expenses. To price insurance products correctly, the insurance company needs to have a good idea of the amount their policy holders are likely to claim in future policy years. The goal of this project is to create a machine learning model to predict how much (in dollars) a given policy holder will claim for during their second policy year based on pet information and claims data from their first policy year. 
+The idea behind pet insurance is simple and similar to the human health insurance market. When a pet insurance policy holder incurs veterinary expenses related to their enrolled pet, they can submit claims for reimbursement, and the insurance company reimburses eligible expenses. Given the stochastic nature of claims submissions however, policy pricing remains a challenge. 
 
-Insert paragraph on summary results
+To price insurance products correctly, the insurance company needs to have a good idea of the amount their policy holders are likely to claim in future policy years. The goal of this project is to create a machine learning model to predict how much (in dollars) a given policy holder will claim for during their second policy year based on pet information and claims data from their first policy year. After evaluating a range of models, the best performing model resulted in claims predictions that were $400 more accurate than predictions made using a simple baseline model.   
 
 
 ## DATASETS <a id ='data'></a>
@@ -27,7 +27,7 @@ The underlying source data for the project consists of two files - `PetData.csv`
 
 ## DATA WRANGLING <a id ='wrangling'></a>
 
-Overall, the two datasets were relatively clean and the bulk of the data wrangling process consisted of data verification and determining how best to combine the pets data with the associated claims data. A few columns required some additional manipulation in preparation for exploratory data analysis.
+Overall, the two datasets were relatively clean and the bulk of the data wrangling process consisted of data verification and determining how best to combine the pets data with the associated claims data. A few columns required some additional manipulation in preparation for exploratory data analysis. 
     
 ### Key Observations:
 * **Pet Count** - Verified 50,000 unique pets (based on PetIds)
@@ -65,7 +65,7 @@ And... unsurprisingly, cat breeds tend to occupy the lower left quadrant of the 
 
 In this project, we evaluated data for 50,000 pet insurance customers with a goal of building a model to predict the total claims amount in the second policy year based on basic info about the pet (breed, age, species, etc.) and claims data (number of claims, amount of each claim, etc.) for the first policy year. We evaluated a variety of different models (listed below) and in the end, found the best performance using a Gradient Boosting Regressor with some parameter tuning. 
 
-Using our best model on our test data, we achieved a mean absolute error of ~638. While still somewhat high, this is down from ~1020 using our baseline model of a simple dummy regressor. This represents an improved accuracy of nearly \$400 per customer. When considered in the context of a customer base of 65-75 million, these results are significant and could lead to substantial savings for the business in terms of improved pricing and risk models.
+Using our best model on our test data, we achieved a mean absolute error of ~638, well inline with our cross-validation scores from model tuning. While still somewhat high, this is down from ~1020 using our baseline model of a simple dummy regressor. This represents an improved accuracy of nearly \$400 per customer. When considered in the context of a customer base of 65-75 million, these results are significant and could lead to substantial savings for the business in terms of improved pricing and risk models.
 
 **Model Evaluation Results:**
 
